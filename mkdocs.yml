@@ -32,7 +32,9 @@ extra:
       link: /es/
       lang: es
   social:
-    - icon: fontawesome/brands/youtube
+    - icon: material/email/newsletter
+      link: https://forms.gle/Ru82SwtzgjezP6Xp6
+    - icon: material/youtube
       link: https://youtube.com
 extra_css:
   - stylesheets/style.css
