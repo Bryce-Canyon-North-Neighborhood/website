@@ -1,0 +1,46 @@
+site_name: Bryce Canyon North Neighborhood
+docs_dir: docs
+theme:
+  name: material
+  # custom_dir: customizations
+  font:
+    text: Quicksand
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue grey
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.footer
+    - navigation.indexes
+    - navigation.tabs
+extra:
+  generator: false
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: Spanish
+      link: /es/
+      lang: es
+  social:
+    - icon: fontawesome/brands/youtube
+      link: https://youtube.com
+extra_css:
+  - stylesheets/style.css
+markdown_extensions:
+  - admonition
+  - attr_list
+plugins:
+  - search
+  - literate-nav:
+      nav_file: navigation
+copyright: Copyright &copy; 2023 Bryce Canyon Neighborhood
