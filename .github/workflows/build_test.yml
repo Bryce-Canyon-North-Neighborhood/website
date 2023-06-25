@@ -1,0 +1,26 @@
+name: checks
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v1
+      - name: Install dependencies
+        run: |
+          python3 -m pip install -r requirements.txt
+      - name: Build website
+        run: |
+          ls
+          mkdocs build
+      - name: Upload built website
+        uses: actions/upload-artifact@v3
+        with:
+          name: html
+          path: |
+            site

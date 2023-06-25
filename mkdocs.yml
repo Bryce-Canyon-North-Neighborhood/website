@@ -32,7 +32,7 @@ extra:
       link: /es/
       lang: es
   social:
-    - icon: material/email/newsletter
+    - icon: material/email-newsletter
       link: https://forms.gle/Ru82SwtzgjezP6Xp6
     - icon: material/youtube
       link: https://youtube.com
